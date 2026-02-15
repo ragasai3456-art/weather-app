@@ -19,10 +19,10 @@ body {
 
 /* Card */
 .container {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(8px);
 
-    padding: 30px 35px;
+    padding: 30px;
     width: 380px;
     border-radius: 18px;
 
@@ -31,7 +31,7 @@ body {
 }
 
 /* Heading */
-.container h1 {
+h1 {
     font-size: 26px;
     margin-bottom: 20px;
     color: #222;
@@ -40,27 +40,25 @@ body {
 /* Input */
 input {
     width: 100%;
-    padding: 12px 14px;
+    padding: 12px;
     font-size: 15px;
 
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 input:focus {
     border-color: #2196f3;
-    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
 }
 
 /* Button */
 button {
     width: 100%;
     padding: 12px;
-
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
 
     border: none;
     border-radius: 8px;
@@ -69,7 +67,7 @@ button {
     background: linear-gradient(135deg, #2196f3, #1e88e5);
     color: white;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -77,6 +75,35 @@ button:hover {
     box-shadow: 0 6px 15px rgba(33, 150, 243, 0.4);
 }
 
+/* Loading */
+#loading {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
 /* Weather result */
 #weatherResult {
+    margin-top: 15px;
+    color: #333;
+}
+
+#weatherResult p {
+    margin: 6px 0;
+}
+
+#icon {
+    width: 80px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
 }
